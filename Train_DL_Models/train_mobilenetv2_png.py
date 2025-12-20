@@ -14,7 +14,7 @@ import numpy as np
 # ----------------------------
 # CONFIG - EDIT ONLY THESE
 # ----------------------------
-DATA_DIR = "/Volumes/rloghanyah/PSM/Dataset_Split_New/PNG/Exp1-6_class" # Original: Dataset_Split_New & Augmented: Augmented_Dataset_Split_New
+DATA_DIR = "/Volumes/rloghanyah/PSM/Augmented_Dataset_Split_New/PNG/Exp2-Normal_vs_Abnormal" # Original: Dataset_Split_New & Augmented: Augmented_Dataset_Split_New
 BATCH_SIZE = 32
 NUM_CLASSES = 2
 LR = 0.0001
