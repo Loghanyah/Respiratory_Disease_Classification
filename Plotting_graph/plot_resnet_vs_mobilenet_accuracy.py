@@ -1,23 +1,20 @@
 import matplotlib.pyplot as plt
+import numpy as np
 
-# Image Sizes
-image_sizes = [64, 128, 224]
+models = ["ResNet-50", "MobileNetV2"]
+test_accuracy = [0.7843, 0.8076]
+f1_score = [0.78, 0.81]
 
-# ResNet-50 Results (YOUR REAL VALUES)
-resnet_acc = [0.7201, 0.7405, 0.7843]
-
-# MobileNetV2 Results (REPLACE with your real values)
-mobilenet_acc = [0.7230, 0.7318, 0.8076]  # <<< CHANGE THESE 3
+x = np.arange(len(models))
+width = 0.35
 
 plt.figure()
-plt.plot(image_sizes, resnet_acc, marker='o', label="ResNet-50")
-plt.plot(image_sizes, mobilenet_acc, marker='o', label="MobileNetV2")
+plt.bar(x - width/2, test_accuracy, width, label="Test Accuracy")
+plt.bar(x + width/2, f1_score, width, label="Weighted F1-score")
 
-plt.xlabel("Image Size (pixels)")
-plt.ylabel("Test Accuracy")
-plt.title("ResNet-50 vs MobileNetV2 Accuracy Comparison")
+plt.xticks(x, models)
+plt.ylabel("Score")
+plt.title("Comparison of Test Accuracy and F1-score (224×224)")
 plt.legend()
-plt.grid(True)
-
-plt.savefig("resnet_vs_mobilenet_accuracy.png")
+plt.tight_layout()
 plt.show()
