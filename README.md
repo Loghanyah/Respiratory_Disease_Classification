@@ -7,7 +7,7 @@ This repository contains the full implementation of the Final Year Project / PSM
 The codebase directly supports the methodology, experiments, and results presented in the accompanying thesis report. It is intended for **academic verification, panel evaluation, and future research extension**.
 
 GitHub Repository:  
-https://github.com/Secret-Genius/Respiratory_Disease_Classification
+https://github.com/Loghanyah/Respiratory_Disease_Classification
 
 ---
 
